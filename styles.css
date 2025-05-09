@@ -1,0 +1,450 @@
+/* Enhanced Search Results Styles */
+.autocomplete-section {
+    padding: 8px 12px;
+    font-weight: bold;
+    color: #666;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.autocomplete-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.autocomplete-item:hover {
+    background-color: #f8f9fa;
+}
+
+.autocomplete-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Exam Item Styles */
+.exam-item {
+    padding: 12px;
+}
+
+.exam-name-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.exam-autocomplete-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.exam-item .exam-autocomplete-mode {
+    font-size: 0.85em;
+    color: #666;
+    background-color: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.exam-details-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.exam-item .exam-autocomplete-purpose {
+    font-size: 0.85em;
+    color: #666;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.exam-autocomplete-subjects {
+    font-size: 0.85em;
+    color: #28a745;
+}
+
+.exam-autocomplete-date {
+    font-size: 0.85em;
+    color: #666;
+    background-color: #f8f9fa;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* College Item Styles */
+.college-item {
+    padding: 12px;
+}
+
+.college-name-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.college-autocomplete-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.college-item .college-autocomplete-grade {
+    font-size: 0.85em;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.college-details-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.college-item .college-autocomplete-location {
+    font-size: 0.85em;
+    color: #666;
+}
+
+.college-autocomplete-courses {
+    font-size: 0.85em;
+    color: #666;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.autocomplete-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.autocomplete-link {
+    color: #007bff;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.autocomplete-link:hover {
+    color: #0056b3;
+}
+
+.fa-external-link-alt {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+/* Exam Details Modal Styles */
+.exam-details {
+    padding: 20px;
+}
+
+.exam-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.exam-logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.exam-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-row {
+    display: flex;
+    gap: 12px;
+}
+
+.info-row .label {
+    font-weight: bold;
+    min-width: 120px;
+    color: #666;
+}
+
+.info-row .value {
+    color: #333;
+}
+
+.exam-actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Profile Dropdown Styles */
+.user-profile {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    min-width: 180px;
+    z-index: 1000;
+    margin-top: 8px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.profile-link:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.profile-link i {
+    width: 16px;
+    color: #666;
+}
+
+.profile-link:hover i {
+    color: #007bff;
+}
+
+/* Scholarships Section Gradient Background */
+#tn-scholarships, #central-scholarships, .scholarships-section {
+    background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+    padding: 36px 0 48px 0;
+    border-radius: 0 0 32px 32px;
+}
+
+.scholarships-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px 28px;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.scholarship-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 290px;
+    min-height: 340px;
+    background: #eaf6fb; /* Light blue */
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    padding: 28px 18px 24px 18px;
+    margin-bottom: 0;
+    transition: box-shadow 0.2s, transform 0.2s;
+    position: relative;
+}
+
+.scholarship-card:hover {
+    box-shadow: 0 8px 32px rgba(33,147,176,0.18);
+    transform: translateY(-4px) scale(1.025);
+}
+
+.scholarship-icon {
+    width: 72px;
+    height: 72px;
+    background: #f5f8fa;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(33,147,176,0.08);
+}
+
+.scholarship-icon i, .scholarship-icon img {
+    font-size: 2.6rem;
+    color: #162d6a;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.scholarship-title {
+    text-align: center;
+    font-size: 1.13rem;
+    font-weight: 700;
+    color: #162d6a;
+    margin: 0 0 18px 0;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scholarship-category, .scholarship-preview, .scholarship-arrow {
+    display: none;
+}
+
+.scholarship-card .btn {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: auto;
+    display: block;
+    border-radius: 24px;
+    font-size: 1.08rem;
+    font-weight: 600;
+    padding: 12px 0;
+    background: #162d6a;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 8px rgba(22,45,106,0.08);
+    transition: background 0.2s;
+}
+
+.scholarship-card .btn:hover {
+    background: #0d1b3f;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .scholarships-grid {
+        gap: 24px 12px;
+    }
+    .scholarship-card {
+        width: 98vw;
+        max-width: 340px;
+        min-height: 280px;
+        padding: 18px 8px 18px 8px;
+    }
+}
+
+/* Scholarship Modal Overlay and Content Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.2s;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 18px;
+    max-width: 650px;
+    width: 95%;
+    padding: 36px 32px 32px 32px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    position: relative;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.close-btn {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #222;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.2s;
+}
+.close-btn:hover {
+    color: #007bff;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    color: #1a237e;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+}
+
+.modal-content b, .modal-content strong {
+    color: #1a237e;
+    font-weight: 600;
+}
+
+.modal-content .section-label {
+    font-weight: 700;
+    color: #1a237e;
+    margin-right: 4px;
+}
+
+.modal-content p {
+    margin: 0 0 18px 0;
+    color: #222;
+    font-size: 1.08rem;
+}
+
+.modal-content a.btn.btn-primary {
+    background: #162d6a;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 8px rgba(22,45,106,0.08);
+    transition: background 0.2s;
+    display: inline-block;
+}
+.modal-content a.btn.btn-primary:hover {
+    background: #0d1b3f;
+    color: #fff;
+}
+
+.modal-content .btn.btn-secondary {
+    background: none;
+    color: #222;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-top: 18px;
+    cursor: pointer;
+    transition: border 0.2s, color 0.2s;
+}
+.modal-content .btn.btn-secondary:hover {
+    border: 1.5px solid #1a237e;
+    color: #1a237e;
+}
+
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 18px 6vw 18px 6vw;
+        max-width: 98vw;
+    }
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
+} 

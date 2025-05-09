@@ -1,0 +1,146 @@
+/* Light Theme (Default) */
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #333;
+    --bg-color: #fff;
+    --card-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --error-color: #dc3545;
+}
+
+/* Dark Theme */
+.dark-theme {
+    --primary-color: #64b5f6;
+    --secondary-color: #1a237e;
+    --accent-color: #ff5252;
+    --text-color: #e0e0e0;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --border-color: #333;
+    --success-color: #43a047;
+    --warning-color: #ffb300;
+    --error-color: #e53935;
+}
+
+/* High Contrast Theme */
+.high-contrast-theme {
+    --primary-color: #0000ff;
+    --secondary-color: #000000;
+    --accent-color: #ff0000;
+    --text-color: #ffffff;
+    --bg-color: #000000;
+    --card-bg: #000000;
+    --border-color: #ffffff;
+    --success-color: #00ff00;
+    --warning-color: #ffff00;
+    --error-color: #ff0000;
+}
+
+/* Theme Transitions */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card, .modal-content, .notification-dropdown {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Theme-specific Adjustments */
+.dark-theme .card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.dark-theme .modal {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.high-contrast-theme .card {
+    border: 2px solid var(--border-color);
+}
+
+.high-contrast-theme .btn {
+    border: 2px solid var(--text-color);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+}
+
+/* Theme-specific Text Colors */
+.dark-theme a {
+    color: var(--primary-color);
+}
+
+.high-contrast-theme a {
+    color: #ffff00;
+}
+
+/* Theme-specific Form Elements */
+.dark-theme input,
+.dark-theme select,
+.dark-theme textarea {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+.high-contrast-theme input,
+.high-contrast-theme select,
+.high-contrast-theme textarea {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+/* Theme-specific Scrollbar */
+.dark-theme ::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dark-theme ::-webkit-scrollbar-track {
+    background: var(--card-bg);
+}
+
+.dark-theme ::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 6px;
+}
+
+.dark-theme ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Theme-specific Focus States */
+.dark-theme *:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.high-contrast-theme *:focus {
+    outline: 3px solid var(--accent-color);
+}
+
+/* Theme-specific Selection */
+.dark-theme ::selection {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+.high-contrast-theme ::selection {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+} 
